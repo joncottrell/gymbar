@@ -1,0 +1,20 @@
+{
+  "name": "gymsportsbar.com",
+  "version": "1.0.0",
+  "description": "Website for Gym Bar.",
+  "author": "Jonathan Cottrell <cottrell.jonathan@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "tailwind:process": "npx postcss scss/global.css --o css/global.css --watch",
+    "start": "yarn clean && npx concurrently \"yarn tailwind:process\" \"yarn serve\"",
+    "serve": "yarn eleventy --serve",
+    "build": "yarn clean && yarn eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "autoprefixer": "^10.4.12",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
