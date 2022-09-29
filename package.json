@@ -9,7 +9,7 @@
     "tailwind:process": "npx postcss scss/global.css --o css/global.css --watch",
     "start": "yarn clean && npx concurrently \"yarn tailwind:process\" \"yarn serve\"",
     "serve": "yarn eleventy --serve",
-    "build": "yarn clean && yarn eleventy"
+    "build": "yarn clean && npx postcss scss/global.css --o css/global.css && yarn eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
