@@ -3,10 +3,26 @@
 body {
   background-image: url("/images/checkers.jpg");
   background-color: black;
-  font-family: "Oswald", verdana, sans-serif, arial, helvetica;
+  font-family: verdana, sans-serif, arial, helvetica;
   color: #c1bdbd;
 }
 
 .logo-bg {
   background-color: #090909;
+}
+
+.text-gradient {
+  background-size: 100%;
+  background-color: white;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#090909, #c1bdbd, #090909);
+}
+
+.slide {
+  display: none;
+}
+
+.headline {
+  font-family: "Oswald", sans-serif;
 }

@@ -1,0 +1,22 @@
+<div class="flex flex-col justify-center items-center">
+  {% for month in events %}
+    <div class="flex flex-col justify-center items-center border border-slate-100 py-2 px-4">
+      <div class="text-2xl text-slate-100 border-b w-full text-center p-2">{{ month.start | month }}</div>
+      <div class="flex flex-col font-family-verdana">
+        {% for day in month.days %}
+          <div class="grid grid-cols-[100px_1fr] border-b py-1.5">
+            <div>
+              <span class="text-sm">{{ day.date | day }}</span>
+              <span class="text-lg font-semibold">{{ day.date | weekday }}</span>
+            </div>
+            <div class="flex flex-col flex-grow md:text-base text-sm gap-1.5 text-white py-1">
+              {% for event in day.events %}
+                <h3>{{ event }}</h3>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
