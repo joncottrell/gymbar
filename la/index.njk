@@ -9,19 +9,4 @@ slides:
   - img: "/images/main_store.jpeg"
     dest: "shop"
 ---
-
-<div class="container">
-  <div class="flex flex-wrap justify-center items-center gap-4 basis-80 mb-5">
-    {% for slide in slides -%}
-      <div class="h-80 relative">
-        {% if slide.dest %}
-          <a href="{{ slide.dest }}">
-          {% endif %}
-          <img class="h-full w-full align-middle border-5" src="{{ slide.img }}"/>
-          {% if slide.dest %}
-          </a>
-        {% endif %}
-      </div>
-    {%- endfor %}
-  </div>
-</div>
+{% include "partials/home.njk" %}

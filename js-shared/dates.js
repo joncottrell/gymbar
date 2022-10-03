@@ -34,6 +34,7 @@ function daysOfMonth(start) {
       });
     return {
       date: date.toJSDate(),
+      iso: date.toISODate(),
       events: events.concat(late),
     };
   });

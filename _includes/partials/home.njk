@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="flex flex-wrap justify-center items-center gap-4 basis-80 mb-5">
+    {% for slide in slides -%}
+      <div class="h-80 relative">
+        {% if slide.dest %}
+          <a href="{{ slide.dest }}">
+          {% endif %}
+          <img class="h-full w-full align-middle border-5" src="{{ slide.img }}"/>
+          {% if slide.dest %}
+          </a>
+        {% endif %}
+      </div>
+    {%- endfor %}
+  </div>
+</div>
+{% if twitter %}
+  <div class="container mx-auto md:w-1/2 py-4">
+    <a class="twitter-timeline" href="https://twitter.com/{{twitter}}?ref_src=twsrc%5Etfw">Tweets by {{twitter}}</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+{% endif %}
