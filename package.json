@@ -5,11 +5,12 @@
   "author": "Jonathan Cottrell <cottrell.jonathan@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf _site",
-    "tailwind:process": "npx postcss scss/global.css --o css/global.css --watch",
-    "start": "yarn clean && npx concurrently \"yarn tailwind:process\" \"yarn serve\"",
+    "clean": "rm -rf _site && rm css/global.css",
+    "tailwind:build": "npx postcss scss/global.css --o css/global.css",
+    "tailwind:watch": "npx postcss scss/global.css --o css/global.css --watch",
+    "start": "yarn clean && yarn tailwind:build && npx concurrently \"yarn tailwind:watch\" \"yarn serve\"",
     "serve": "yarn eleventy --serve",
-    "build": "yarn clean && npx postcss scss/global.css --o css/global.css && yarn eleventy"
+    "build": "yarn clean && yarn tailwind:build && yarn eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
