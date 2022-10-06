@@ -1,17 +1,16 @@
-<div class="container">
-  <div class="flex flex-wrap justify-center items-center gap-4 basis-80 mb-5">
-    {% for slide in slides -%}
-      <div class="h-80 relative">
-        {% if slide.dest %}
-          <a href="{{ slide.dest }}">
-          {% endif %}
-          <img class="h-full w-full align-middle border-5" src="{{ slide.img }}"/>
-          {% if slide.dest %}
-          </a>
-        {% endif %}
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+  {% for slide in slides -%}
+    {% if slide.dest %}
+      <a class="flex justify-center" href="{{ slide.dest }}">}
+        <img class="w-full" src="{{ slide.img }}"/>
+      </a>
+    {% else %}
+      <div class="flex justify-center">}
+        <img class="w-full" src="{{ slide.img }}"/>
       </div>
-    {%- endfor %}
-  </div>
+
+    {% endif %}
+  {%- endfor %}
 </div>
 {% if twitter %}
   <div class="container mx-auto md:w-1/2 py-4">

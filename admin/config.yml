@@ -1,0 +1,11 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+
+collections:
+  - name: "ny-posters"
+    label: "New York Posters"
+    folder: "_data/ny-posters"
+    create: true
