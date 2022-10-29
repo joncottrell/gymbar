@@ -47,7 +47,14 @@ layout: "layouts/base.njk"
             Shop
           </a>
         </li>
-
+        {% if locale == 'ny' %}
+        <li>
+          <a href="/{{locale}}/locker"
+            class="block py-2 px-4 text-white rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-slate-700 md:p-0">
+            Locker Room
+          </a>
+        </li>
+        {% endif %}
         <li>
           <a href="/{{locale}}/contact"
             class="block py-2 px-4 text-white rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-slate-700 md:p-0">
