@@ -3,6 +3,7 @@ const { DateTime } = require("luxon");
 module.exports = (config) => {
   config.addPassthroughCopy("css");
   config.addPassthroughCopy("images");
+  config.addPassthroughCopy("admin/config.yml");
   config.addFilter("month", function (date) {
     return DateTime.fromJSDate(date).toLocaleString({
       month: "long",

@@ -1,14 +1,43 @@
 [[redirects]]
   from = "/nyhome.html"
   to = "/ny"
-  force = true
 
 [[redirects]]
   from = "/nyevents.html"
   to = "/ny/events"
-  force = true
 
 [[redirects]]
   from = "/nylockerroom.html"
   to = "/ny/locker"
-  force = true
+
+[[redirects]]
+  from = "/nyleagues.html"
+  to = "/ny/leagues"
+
+[[redirects]]
+  from = "/nypress.html"
+  to = "/ny"
+
+[[redirects]]
+  from = "/nycontact.html"
+  to = "/ny/contact"
+
+[[redirects]]
+  from = "/lahome.html"
+  to = "/la"
+
+[[redirects]]
+  from = "/laevents.html"
+  to = "/la/events"
+
+[[redirects]]
+  from = "/laleagues.html"
+  to = "/la/leagues"
+
+[[redirects]]
+  from = "/lapress.html"
+  to = "/la"
+
+[[redirects]]
+  from = "/lacontact.html"
+  to = "/la/contact"
