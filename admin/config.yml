@@ -6,11 +6,16 @@ media_folder: "images"
 
 collections:
   - name: "ny-posters"
-    label: "NY Posters"
-    label_singular: "NY Poster"
-    description: "These posters appear in the New York Home Page"
-    folder: "_posters/ny"
+    label: "Posters"
+    label_singular: "Poster"
+    format: "json"
+    extension: "json"
+    description: "These posters appear in home pages"
     create: true
-    fields:
-      - { label: "Image URL", name: "url", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
+    files:
+      - label: "NY Posters"
+        name: "ny-posters"
+        file: "_data/posters/ny.json"
+        fields:
+          - { label: "Image URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }

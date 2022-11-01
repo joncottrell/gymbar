@@ -53,3 +53,5 @@ next-env.d.ts
 /css/global.css
 _site
 /www.gymsportsbar.com
+# Local Netlify folder
+.netlify
