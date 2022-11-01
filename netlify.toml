@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/nyhome.html"
+  to = "/ny"
+  force = true
+
+[[redirects]]
+  from = "/nyevents.html"
+  to = "/ny/events"
+  force = true
+
+[[redirects]]
+  from = "/nylockerroom.html"
+  to = "/ny/locker"
+  force = true

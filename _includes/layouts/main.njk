@@ -54,6 +54,13 @@ layout: "layouts/base.njk"
             Locker Room
           </a>
         </li>
+        {% else %}
+        <li>
+          <a href="/{{locale}}/menu"
+            class="block py-2 px-4 text-white rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-slate-700 md:p-0">
+            Menu
+          </a>
+        </li>
         {% endif %}
         <li>
           <a href="/{{locale}}/contact"
