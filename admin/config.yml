@@ -36,19 +36,23 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Description", name: "description", widget: "string", required: false }
-  - name: "ftl-menu"
-    label: "FTL Menu"
-    description: "All food items will appear grouped by section."
-    create: true
-    folder: "_data/menu/ftl"
-    fields:
-      - { label: "Menu Section", name: "section", widget: "string" }
-      - name: "menu-item"
-        label: "Menu Item"
-        widget: "list"
+      - label: "FTL Menu"
+        name: "ftl-menu"
+        file: "_data/ftl-menu.json"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Description", name: "description", widget: "string", required: false }
+          - label: "Sections" 
+            name: "sections"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string", required: false }
   - name: "ny-posters"
     label: "NY Posters"
     label_singular: "NY Poster"
