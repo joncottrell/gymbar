@@ -14,19 +14,28 @@ collections:
       - { label: "Day of Week", name: "day", widget: "select", options: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Link", name: "event-link", widget: "string", required: false }
-  - name: "la-menu"
-    label: "LA Menu"
-    description: "All items appear in their sections."
-    create: true
-    folder: "_data/menu/la"
-    fields:
-      - { label: "Menu Section", name: "section", widget: "string" }
-      - name: "menu-item"
-        label: "Menu Item"
-        widget: "list"
+  - name: "menus"
+    label: "Menus"
+    description: "Sectioned menus"
+    extension: "json"
+    files:
+      - label: "LA Menu"
+        name: "la-menu"
+        file: "_data/la-menu.json"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Description", name: "description", widget: "string", required: false }
+          - label: "Sections" 
+            name: "sections"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string", required: false }
   - name: "ftl-menu"
     label: "FTL Menu"
     description: "All food items will appear grouped by section."

@@ -3,5 +3,6 @@
   layout: "la.njk"
 ---
 
-{% set menu = laMenu %}
+{% set menu = collections.laMenu %}
+<div class="text-white">Contents: {{ menu | dump }}</div>
 {% include "partials/menu.njk" %}
