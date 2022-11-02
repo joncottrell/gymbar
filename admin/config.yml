@@ -5,29 +5,57 @@ backend:
 media_folder: "images/uploads"
 
 collections:
-  - name: "ny-posters"
-    label: "Posters"
-    label_singular: "Poster"
-    format: "json"
-    extension: "json"
-    description: "These posters appear in home pages"
+  - name: "la-menu"
+    label: "LA Menu"
+    description: "All items appear in their sections."
     create: true
-    files:
-      - label: "NY Posters"
-        name: "ny-posters"
-        file: "_data/posters/ny.json"
+    folder: "_data/menu/la"
+    fields:
+      - { label: "Menu Section", name: "section", widget: "string" }
+      - name: "menu-item"
+        label: "Menu Item"
+        widget: "list"
         fields:
-          - { label: "Image URL", name: "url", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-      - label: "FTL Posters"
-        name: "ftl-posters"
-        file: "_data/posters/ftl.json"
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+  - name: "ftl-menu"
+    label: "FTL Menu"
+    description: "All food items will appear grouped by section."
+    create: true
+    folder: "_data/menu/ftl"
+    fields:
+      - { label: "Menu Section", name: "section", widget: "string" }
+      - name: "menu-item"
+        label: "Menu Item"
+        widget: "list"
         fields:
-          - { label: "Image URL", name: "url", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-      - label: "LA Posters"
-        name: "la-posters"
-        file: "_data/posters/la.json"
-        fields:
-          - { label: "Image URL", name: "url", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+  - name: "ny-posters"
+    label: "NY Posters"
+    label_singular: "NY Poster"
+    description: "These posters appear in the home page"
+    create: true
+    folder: "_data/posters/ny"
+    fields:
+      - { label: "Image URL", name: "url", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+  - name: "la-posters"
+    label: "LA Posters"
+    label_singular: "LA Poster"
+    description: "These posters appear in the home page"
+    create: true
+    folder: "_data/posters/la"
+    fields:
+      - { label: "Image URL", name: "url", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+  - name: "ftl-posters"
+    label: "FTL Posters"
+    label_singular: "FTL Poster"
+    description: "These posters appear in the home page"
+    create: true
+    folder: "_data/posters/ftl"
+    fields:
+      - { label: "Image URL", name: "url", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+
