@@ -19,3 +19,15 @@ collections:
         fields:
           - { label: "Image URL", name: "url", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
+      - label: "FTL Posters"
+        name: "ftl-posters"
+        file: "_data/posters/ftl.json"
+        fields:
+          - { label: "Image URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "LA Posters"
+        name: "la-posters"
+        file: "_data/posters/la.json"
+        fields:
+          - { label: "Image URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
