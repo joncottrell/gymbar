@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {
+      "name": "Burgers",
+      "items": [
+        {
+          "name": "Build Your Own",
+          "description": "Something else"
+        }
+      ]
+    }
+  ]
+}
