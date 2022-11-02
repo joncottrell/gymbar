@@ -1,8 +1,8 @@
 <div class="container mx-auto">
-  {% for section in menu %}
-    <h2 class="font-bold text-xl text-white px-4">{{ section.section }}</h2>
+  {% for section in menu.sections %}
+    <h2 class="font-bold text-xl text-white px-4">{{ section.name }}</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 m-6">
-      {% for item in section.menu-item %}
+      {% for item in section.items %}
         <div class="flex flex-col p-2">
           <div class="font-bold text-white">{{ item.name }}</div>
           <div class="text-slate-400">{{ item.description }}</div>

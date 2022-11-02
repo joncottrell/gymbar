@@ -1,9 +1,6 @@
 const { DateTime } = require("luxon");
 
 module.exports = (config) => {
-  config.addCollection("laMenu", (collection) => {
-    return collection.getFilteredByGlob("_data/laMenu/*.md");
-  });
   config.addPassthroughCopy("css");
   config.addPassthroughCopy("images");
   config.addPassthroughCopy("admin/config.yml");

@@ -21,7 +21,7 @@ collections:
     files:
       - label: "LA Menu"
         name: "la-menu"
-        file: "_data/la-menu.json"
+        file: "_data/laMenu.json"
         fields:
           - label: "Sections" 
             name: "sections"
@@ -38,7 +38,7 @@ collections:
                   - { label: "Description", name: "description", widget: "string", required: false }
       - label: "FTL Menu"
         name: "ftl-menu"
-        file: "_data/ftl-menu.json"
+        file: "_data/ftlMenu.json"
         fields:
           - label: "Sections" 
             name: "sections"
