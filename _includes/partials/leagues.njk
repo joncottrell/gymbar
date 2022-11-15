@@ -1,0 +1,7 @@
+<div class="grid grid-cols-1 md:grid-cols-3 m-6 text-white">
+  {% for league in leagues %}
+    <div class="flex flex-col p-2 border border-white">
+      <a class="font-bold text-white" href="{{league.url | url}}">{{ league.name }}</a>
+    </div>
+  {% endfor %}
+</div>

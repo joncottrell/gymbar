@@ -1,0 +1,13 @@
+---
+layout: "la.njk"
+---
+
+{% set leagues = collections.laLeagues %}
+
+<div class="flex flex-row items-center justify-center text-white container mx-auto flex-wrap gap-4">
+  <img src="/images/gym_dodgeball.jpeg"/>
+  <div class="flex-col flex gap-4 max-w-lg">
+    {{ content | safe }}
+  </div>
+</div>
+{% include "partials/leagues.njk" %}
