@@ -1,0 +1,14 @@
+#rotator
+{
+	overflow: hidden;
+	position: relative;
+	width: 290px;
+	height: 400px;
+}
+
+#rotator img
+{
+	border: 0;
+	width: 290px;
+	height: 400px;
+}

@@ -1,0 +1,33 @@
+body    { background: #000000 url(images/bkgd.jpg); font-size: 11px; font-family: verdana, sans-serif, arial, helvetica; color: #C1BDBD; scrollbar-3dlight-color: #FFFFFF; scrollbar-arrow-color: #575655; scrollbar-darkshadow-color: #FFFFFF ; scrollbar-face-color: #FFFFFF; scrollbar-highlight-color: #FFFFFF; scrollbar-shadow-color: #FFFFFF; scrollbar-track-color: #FFFFFF; }
+div,p,blockquote,ol,ul,dl,li,dt,dd,td,th  { color: #424242; font-size: 11px; font-family: verdana, sans-serif, arial, helvetica;}
+img {border: 0}
+.name {font-family: verdana, sans-serif, arial, helvetica; font-size: 80%; color:#F7F1CF; font-weight: bold}
+
+.footer {font-family: verdana, sans-serif, arial, helvetica; font-size: 9px; color: #201F1F;}
+.large {font-family: verdana, sans-serif, arial, helvetica; font-size: 13px; font-weight: bold}
+.green {font-family: verdana, sans-serif, arial, helvetica; font-size: 10px; color:#729C01; font-weight: bold}
+.table {border: solid; overflow:auto;}
+.required {font-family: verdana, sans-serif, arial, helvetica; color: #AC1E23; font-weight:bold}
+
+
+a { text-decoration: none; color:#000000; border: none; font-weight:bold;}
+a.link { font-size: 80%; color: #000000; font-weight: bold}
+a.visited { text-decoration: none; color: #000000; border: none; font-weight: bold}
+a.image { text-decoration: none; color: #000000; border: none; font-weight: bold}
+a:hover { text-decoration: none; color: #AFACAF; font-weight: bold}
+
+#emailist{ 
+  position:absolute;
+  text-align:center;
+  height:21px;
+  visibility:visible;
+  overflow:hidden;
+  z-index:5;
+  }
+  
+
+
+
+
+
+

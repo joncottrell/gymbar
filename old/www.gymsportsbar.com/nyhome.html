@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="sIFR-active" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+<title>GYM Sportsbar: New York City's FIRST Gay Sports Bar Since 2005</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Description" content="The first and only gay sports bar in New York City" />
+<meta name="Keywords" content="GYM Sportsbar, Gay Sports Bar, New York" />
+<meta name="Distribution" content="global" />
+<meta name="robots" content="index,follow" />
+<meta name="revisit-after" content="30 Days" />
+<link rel="icon" type="image/png" href="http://www.gymsportsbar.com/favicon.png">
+<link rel="stylesheet" href="squeezebox/SqueezeBox.css" type="text/css" media="screen">
+<link href="gymstyle.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+//-->
+</script>
+
+<style type="text/css">
+
+#dropmenudiv{
+position:absolute;
+border:1px solid #424242;
+background: #000000;
+font: normal 10px helvetica;
+line-height:250px;
+z-index:100;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+
+var menu1=new Array()
+menu1[0]='<img src="eventsny/nymon.jpg" border="1">'
+
+//Contents for menu 2, and so on
+var menu2=new Array()
+menu2[0]='<img src="eventsny/nytue.jpg" border="1">'
+
+var menu3=new Array()
+menu3[0]='<img src="eventsny/nywed.jpg" border="1">'
+
+var menu4=new Array()
+menu4[0]='<img src="eventsny/nythu.jpg" border="1">'
+
+var menu5=new Array()
+menu5[0]='<img src="eventsny/nyfri.jpg" border="1">'
+
+var menu6=new Array()
+menu6[0]='<img src="eventsny/nysat.jpg" border="1">'
+
+var menu7=new Array()
+menu7[0]='<img src="eventsny/nysun.jpg" border="1">'
+
+var menuwidth='300px' //default menu width
+var menubgcolor='#000000'  //menu bgcolor
+var disappeardelay='250'  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function calendar(desktopURL)
+{
+  var desktop = window.open( desktopURL, "_blank", "toolbar=no,location=no,status=no,menubar=no,scrollbars=no,width=415,height=203,resizable=no,screenX=0,left=0,screenY=0,top=0" );
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+
+<script LANGUAGE="Javascript" TYPE="Text/Javascript">
+
+var adImages = new Array("images/main_rotate_1.jpg","images/main_rotate_happy.jpg","images/main_rotate_football.jpg","images/main_rotate_karaoke.jpg","images/main_rotate_2.jpg","images/main_rotate_3.jpg")
+var thisAd = 0
+var imgCt = 6
+function rotate() {
+if (document.images) {
+thisAd++
+if (thisAd == imgCt) {
+thisAd = 0
+}
+document.adBanner.src=adImages[thisAd]
+  setTimeout("rotate()", 5 * 1000)
+  }
+}
+</script>
+<script async src="//syndication.suite.yahoo.com/content/seed.js?partner=22e6d429-aa4f-4549-9620-fa8e6eb239cd&site=yss"/></script>
+
+</head>
+
+
+<body bgcolor="#000000" leftmargin="0" topmargin="30" marginwidth="0" marginheight="30" onload="rotate()">
+		<table width="969" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="left" width="201"><a href="http://www.gymsportsbar.com"><img src="images/logo_ny.gif" alt="" width="155" height="111" border="0"></a></td>
+				<td align="right" colspan="2" valign="top"><br><img src="images/teamny/team_ny.gif" alt="" width="366" height="50" border="0" /><br><a href="http://www.twitter.com/GYMSPORTSBARNY"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow GYMSPORTSBARNY on Twitter"/></a><br></td>
+			</tr>
+			<tr height="36">
+				<td bgcolor="#000000" colspan="3" width="969" height="36" background="images/round_edge1.gif"></td>
+				
+			</tr>
+        
+			<tr height="15">
+				<td colspan="3" bgcolor="#000000" width="969" height="15" align="center">
+				<nobr>
+					<a href="index.php" target="_self" onMouseOver="MM_swapImage('nyhome','','images/link_0b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_0a.gif" alt="" width="63" height="15" border="0" name="nyhome"></a>
+					<a href="nyroster.html" target="_self" onMouseOver="MM_swapImage('nyroster','','images/link_1b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_1a.gif" alt="" width="61" height="15" border="0" name="nyroster"></a>
+					<a href="nyevents.html" target="_self" onMouseOver="MM_swapImage('nyevents','','images/link_2b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_2a.gif" alt="" width="61" height="15" border="0" name="nyevents"></a>
+					<a href="nylockerroom.html" target="_self" onMouseOver="MM_swapImage('nylockerroom','','images/link_3b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_3a.gif" alt="" width="96" height="15" border="0" name="nylockerroom"></a>
+					<a href="nygallery.html" target="_self" onMouseOver="MM_swapImage('nyphotogallery','','images/link_4b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_4a.gif" alt="" width="112" height="15" border="0" name="nyphotogallery"></a>
+					<a href="nyleagues.html" target="_self" onMouseOver="MM_swapImage('nyleagues','','images/link_5b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_5a.gif" alt="" width="71" height="15" border="0" name="nyleagues"></a>
+					<a href="nypress.html" target="_self" onMouseOver="MM_swapImage('nypress','','images/link_6b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_6a.gif" alt="" width="57" height="15" border="0" name="nypress"></a>
+					<a href="gymstore.html" target="_self" onMouseOver="MM_swapImage('nyshop','','images/link_7b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_7a.gif" alt="" width="51" height="15" border="0" name="nyshop"></a>
+					<a href="http://www.facebook.com/pages/GYM-Sportsbar/49447833149" target="_blank" onMouseOver="MM_swapImage('nyfacebook','','images/link_8b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_8a.gif" alt="" width="76" height="15" border="0" name="nyfacebook"></a>
+					<a href="nycontact.html" target="_self" onMouseOver="MM_swapImage('nycontact','','images/link_9b.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/link_9a.gif" alt="" width="147" height="15" border="0" name="nycontact"></a>
+					<a href="join-gym.htm" target="_blank"><img src="images/link_11a.gif" alt="" width="83" height="15" border="0" /></a>
+				</nobr>
+				</td>
+			</tr>
+			<tr height="9">
+				<td colspan="3" bgcolor="#000000" width="969" height="9" align="center"></td>
+			</tr>
+            <tr>
+				<td bgcolor="#000000" colspan="3" width="969"></td>
+				
+			</tr>
+			<tr height="9">
+				<td align="right" colspan="3" height="9" background="images/diag_gray.gif"></td>
+				
+			</tr>	
+			<tr height="292">
+				<td align="right" valign="top" width="201"><!--
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_1.gif" alt="" width="200" height="49" border="0" /></a><br>
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu2, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_2.gif" alt="" width="200" height="51" border="0" /></a><br>
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu3, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_3.gif" alt="" width="200" height="50" border="0" /></a><br>
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu4, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_4.gif" alt="" width="200" height="50" border="0" /></a><br>
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu5, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_5.gif" alt="" width="200" height="49" border="0" /></a><br>
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu6, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_6.gif" alt="" width="200" height="51" border="0" /></a><br>
+					<a onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu7, '201px')" onMouseout="delayhidemenu();"><img src="images/daily_7.gif" alt="" width="200" height="50" border="0" /></a><br>
+					
+					<a href="nylockerroom.html" target="_self"><!-- <img src="images/hp-locker-room.jpg" alt="" width="200" height="121" border="0" /> </a
+					><a href="gymstore.html" target="_self"><img src="images/main_store.jpg" alt="" width="200" height="175" border="0" /></a> --><img src="images/main_rotate_happy.jpg" width="200" /><br /><img src="images/main_rotate_4.jpg" alt="" width="200" border="0" />
+                    <!-- <img src="images/main_happyhour.jpg" alt="" width="200" height="200" border="0" /> -->
+				</td>
+				<td align="center" valign="top" bgcolor="black" height="598" width="486"><img src="images/main_rotate_1.jpg" alt="" width="462" border="0" name="adBanner" />
+                </td>
+				<td align="left" valign="top" bgcolor="black" width="281" height="292">
+                <a class="twitter-timeline" data-width="281" data-height="600" data-theme="dark" href="https://twitter.com/GYMSPORTSBARNY">Tweets by GYMSPORTSBARNY</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><br /><a href="https://www.facebook.com/pages/GYM-Sportsbar/49447833149" target="_blank"><!-- <img src="images/locker-room_parties.jpg" alt="" width="281" height="221" border="0" /></a> -->
+				  
+										
+                                        </td>
+
+				</td>
+			</tr>
+			<tr height="36">
+				<td bgcolor="#000000" colspan="3" width="969" height="44" background="images/round_edge2.gif"></td>
+				
+			</tr>
+			<tr>
+				<td align="left" colspan="3"><br>
+						<span class="footer">&copy; Copyright 2012. Gym Sportsbar | 167 8th Avenue [Between 18th &amp; 19th St]</span>
+				</td>
+			</tr>
+
+		</table>
+	</body>
+</html>
